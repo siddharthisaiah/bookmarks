@@ -123,4 +123,6 @@ dmypy.json
 *~
 
 LEARNINGS.md
+learning.md
+
 # End of https://www.gitignore.io/api/django
