@@ -17,7 +17,7 @@
                     <a href="{% url 'dashboard' %}">My Dashboard</a>
                 </li>
                 <li {% if section == 'images' %} class="selected" {% endif %}>
-                    <a href="#">Images</a>
+                    <a href="{% url "images:list" %}">Images</a>
                 </li>
                 <li {% if section == 'people' %} class="selected" {% endif %}>
                     <a href="#">People</a>
@@ -57,7 +57,7 @@
         
         <script>
 
-         var csrftoken = Cookies.get('cstftoken');
+         var csrftoken = Cookies.get('csrftoken');
 
          function csrfSafeMethod(method) {
              // these HTTP methods do not require CSRF protection
